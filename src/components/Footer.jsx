@@ -8,62 +8,54 @@ import {
 
 const Footer = () => {
   return (
-    <header className="w-full">
-      {/* Top: Banner Image */}
-      <div className="w-full">
-        <img
-          src="https://i.ibb.co/R55qC9M/NBCE-Certificate-banner.jpg" // ← Place image in public folder
-          alt="NBCE Certification"
-          className="w-full h-auto"
-        />
-      </div>
-
-      {/* Bottom: Logo + Address + Social Links */}
-      <div className="bg-white border-b py-2 px-4 sm:px-8 flex flex-col md:flex-row justify-between items-center gap-2 shadow-sm">
-        {/* Left: Logo + Address */}
-        <div className="flex flex-col md:flex-row items-center gap-2 md:gap-6">
-          {/* BitByte Logo or Text */}
-          <div className=" w-[200px] sm:w-[150px]">
+    <footer className="w-full bg-orange-50 border-t border-orange-200 shadow-sm px-4 sm:px-8 py-3">
+      <div className="max-w-7xl mx-auto">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-3">
+          {/* Left: Logo */}
+          <div className="w-[100px] flex-shrink-0">
             <img
               src="https://i.ibb.co/P7MKHNH/bitbyte-logo.png"
-              alt="bitbyte logo"
+              alt="BitByte Logo"
+              className="w-full h-auto object-contain"
             />
           </div>
-          {/* Address */}
-          <p className="text-sm text-gray-600">
-            📍 Near Bus Stand, Hinjilicut, Ganjam, Odisha - 761102
-          </p>
-        </div>
 
-        {/* Right: Social Icons */}
-        <div className="flex gap-3 mt-2 md:mt-0">
-          <a
-            href="#"
-            className="p-2 rounded-full bg-orange-100 text-orange-600 hover:bg-orange-500 hover:text-white transition"
-          >
-            <FaFacebookF />
-          </a>
-          <a
-            href="#"
-            className="p-2 rounded-full bg-orange-100 text-orange-600 hover:bg-orange-500 hover:text-white transition"
-          >
-            <FaInstagram />
-          </a>
-          <a
-            href="#"
-            className="p-2 rounded-full bg-orange-100 text-orange-600 hover:bg-orange-500 hover:text-white transition"
-          >
-            <FaLinkedinIn />
-          </a>
-          <a
-            href="#"
-            className="p-2 rounded-full bg-orange-100 text-orange-600 hover:bg-orange-500 hover:text-white transition"
-          >
-            <FaWhatsapp />
-          </a>
+          {/* Center: Address */}
+          <div className="flex-1 text-center">
+            <p className="text-sm text-gray-600">
+              📍 Near Bus Stand, Hinjilicut, Ganjam, Odisha - 761102
+            </p>
+          </div>
+
+          {/* Right: Social Icons */}
+          <div className="flex gap-2">
+            {[
+              {
+                Icon: FaFacebookF,
+                href: "https://www.facebook.com/share/16eNLvQNK7/",
+                label: "Facebook",
+              },
+              {
+                Icon: FaInstagram,
+                href: "https://www.instagram.com/bit_byte_computer_institute_?igsh=YnB3ejVpamN0cDc0",
+                label: "Instagram",
+              },
+              { Icon: FaLinkedinIn, href: "#", label: "LinkedIn" },
+              { Icon: FaWhatsapp, href: "#", label: "WhatsApp" },
+            ].map(({ Icon, href, label }, index) => (
+              <a
+                key={index}
+                href={href}
+                aria-label={label}
+                className="p-2 rounded-full bg-orange-100 text-orange-600 hover:bg-orange-500 hover:text-white transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-orange-400 focus:ring-offset-1"
+              >
+                <Icon size={14} />
+              </a>
+            ))}
+          </div>
         </div>
       </div>
-    </header>
+    </footer>
   );
 };
 

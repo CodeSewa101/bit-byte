@@ -16,7 +16,7 @@ const NavHeader = () => {
   ];
 
   const dropdownItems = [
-    { name: "Instructor", path: "/instructor" },
+    { name: "Testimonials", path: "/testimonials" },
     { name: "Gallery", path: "/gallery" },
   ];
 

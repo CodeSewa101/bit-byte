@@ -4,6 +4,7 @@ import HomeCourseCard from "../components/HomeCourseCard";
 import AboutTop from "../components/AboutTop";
 import WhyChooseUs from "../components/WhyChooseUs";
 import HomeContact from "../components/HomeContact";
+import FooterBanner from "../components/FooterBanner";
 function Home() {
   return (
     <div>
@@ -14,6 +15,7 @@ function Home() {
       <WhyChooseUs />
       <HomeCourseCard />
       <HomeContact />
+      <FooterBanner />
     </div>
   );
 }
