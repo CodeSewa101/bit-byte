@@ -12,7 +12,7 @@ const NavHeader = () => {
     { name: "About", path: "/about" },
     { name: "Courses", path: "/course" },
     { name: "Pages", path: null }, // No direct path for dropdown parent
-    { name: "Contact", path: "/contact" },
+    { name: "Contact Us", path: "/contact" },
   ];
 
   const dropdownItems = [
@@ -31,7 +31,7 @@ const NavHeader = () => {
   };
 
   return (
-    <header className="bg-white shadow-md border-b border-gray-200 py-2 ">
+    <header className="bg-white shadow-md border-b border-gray-200 py-2 w-[100%] fixed  top-0 z-50  ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}

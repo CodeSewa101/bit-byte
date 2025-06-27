@@ -1,10 +1,6 @@
 import React from "react";
-import {
-  FaFacebookF,
-  FaInstagram,
-  FaLinkedinIn,
-  FaWhatsapp,
-} from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaPhone } from "react-icons/fa";
+import { MdEmail } from "react-icons/md"; // Correct email icon
 
 const Footer = () => {
   return (
@@ -40,8 +36,16 @@ const Footer = () => {
                 href: "https://www.instagram.com/bit_byte_computer_institute_?igsh=YnB3ejVpamN0cDc0",
                 label: "Instagram",
               },
-              { Icon: FaLinkedinIn, href: "#", label: "LinkedIn" },
-              { Icon: FaWhatsapp, href: "#", label: "WhatsApp" },
+              {
+                Icon: FaPhone,
+                href: "tel:+919556047333",
+                label: "Call",
+              },
+              {
+                Icon: MdEmail,
+                href: "mailto:ramamurty2001@gmail.com",
+                label: "Email",
+              },
             ].map(({ Icon, href, label }, index) => (
               <a
                 key={index}

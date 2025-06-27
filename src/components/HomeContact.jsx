@@ -78,13 +78,13 @@ const HomeContact = () => {
                 <ContactItem
                   icon={<FaPhoneAlt className="text-white" />}
                   title="Call Us"
-                  description="+91 9876543210"
+                  description="+91 9556047333"
                   color="bg-gradient-to-r from-blue-500 to-blue-600"
                 />
                 <ContactItem
                   icon={<FaEnvelope className="text-white" />}
                   title="Email Us"
-                  description="info@bitbyteedu.in"
+                  description="ramamurty2001@gmail.com"
                   color="bg-gradient-to-r from-green-500 to-green-600"
                 />
               </div>
@@ -165,7 +165,7 @@ const HomeContact = () => {
                 <button
                   onClick={handleSubmit}
                   disabled={isSubmitting}
-                  className="w-full bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 disabled:from-gray-400 disabled:to-gray-500 text-white font-semibold py-3 px-8 rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 disabled:transform-none disabled:cursor-not-allowed"
+                  className="w-full bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 hover:cursor-pointer disabled:from-gray-400 disabled:to-gray-500 text-white font-semibold py-3 px-8 rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 disabled:transform-none disabled:cursor-not-allowed"
                 >
                   {isSubmitting ? (
                     <div className="flex items-center justify-center gap-2">

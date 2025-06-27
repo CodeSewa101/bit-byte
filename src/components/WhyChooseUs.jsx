@@ -9,8 +9,9 @@ import {
   FaThumbsUp,
   FaStar,
 } from "react-icons/fa";
-
+import { useNavigate } from "react-router-dom";
 const WhyChooseUs = () => {
+  const navigate = useNavigate();
   const features = [
     {
       icon: <FaCertificate className="text-white" />,
@@ -152,10 +153,16 @@ const WhyChooseUs = () => {
               with BitByte.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-semibold py-3 px-8 rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
+              <button
+                onClick={() => navigate("/contact")}
+                className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 hover:cursor-pointer text-white font-semibold py-3 px-8 rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300"
+              >
                 Enroll Today
               </button>
-              <button className="border-2 border-orange-500 text-orange-600 hover:bg-orange-500 hover:text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300">
+              <button
+                onClick={() => navigate("/course")}
+                className="border-2 border-orange-500 text-orange-600 hover:bg-orange-500 hover:text-white hover:cursor-pointer font-semibold py-3 px-8 rounded-lg transition-all duration-300"
+              >
                 View Courses
               </button>
             </div>

@@ -240,11 +240,6 @@ const CourseCard = ({ course, index }) => {
             </span>
             <span className="ml-1">enrolled</span>
           </div>
-
-          <button className="relative bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-6 py-3 rounded-full text-sm font-bold transition-all duration-300 flex items-center shadow-lg hover:shadow-xl transform hover:scale-105 overflow-hidden">
-            <span className="relative z-10">Enroll Now</span>
-            <ArrowRight className="w-4 h-4 ml-2 relative z-10 transition-transform duration-300 group-hover:translate-x-1" />
-          </button>
         </div>
       </div>
     </div>

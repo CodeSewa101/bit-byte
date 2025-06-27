@@ -10,13 +10,15 @@ import Contact from "./pages/Contact";
 
 import Testimonials from "./pages/Testimonials";
 import Gallery from "./components/Gallery";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="App">
         <NavHeader />
-        <main>
+        <main className="mt-[36px] overflow-x-hidden">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />

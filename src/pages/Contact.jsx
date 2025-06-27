@@ -62,14 +62,14 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Call Us",
-      detail: "+91 9876543210",
+      detail: "+91 9556047333",
       subDetail: "Mon-Sat, 9AM-6PM",
       color: "from-amber-500 to-orange-500",
     },
     {
       icon: Mail,
       title: "Email Us",
-      detail: "info@bitbyte.institute",
+      detail: "ramamurty2001@gmail.com",
       subDetail: "Quick Response",
       color: "from-red-500 to-pink-500",
     },
