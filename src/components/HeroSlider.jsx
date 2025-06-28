@@ -801,7 +801,7 @@ const HeroSlider = () => {
       <ParticleBackground />
 
       {/* Logo Text Header - Fixed at top */}
-      <div className="absolute top-4 left-0 right-0 z-30 pt-4 sm:pt-6 sm:top-10 lg:pt-8">
+      <div className="absolute top-4 left-0 right-0 z-30 pt-4 sm:pt-10 sm:mt-4 lg:pt-8">
         <div className="text-center">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white drop-shadow-2xl">
             <span className="bg-gradient-to-r from-orange-400 via-amber-400 to-yellow-400 bg-clip-text text-transparent">
