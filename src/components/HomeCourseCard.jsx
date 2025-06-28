@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Clock, Users, Star, ArrowRight, Play } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import { courseImages } from "../assets/images/courses";
 // Enhanced course data
 const coursesData = [
   {
@@ -8,8 +9,7 @@ const coursesData = [
     title: "O Level Computer Course",
     description:
       "Comprehensive computer literacy program recognized by NIELIT. Master essential computing skills and programming fundamentals.",
-    image:
-      "https://images.unsplash.com/photo-1607799279861-4dd421887fb3?w=400&h=250&fit=crop",
+    image: courseImages.OLevel,
     duration: "12 months",
     students: 1834,
     rating: 4.9,
@@ -23,8 +23,7 @@ const coursesData = [
     title: "PGDCA - Post Graduate Diploma in Computer Applications",
     description:
       "Comprehensive 1-year diploma covering programming, database management, web development, and computer fundamentals.",
-    image:
-      "https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=400&h=250&fit=crop",
+    image: courseImages.pgdca,
     duration: "12 months",
     students: 1245,
     rating: 4.7,
@@ -38,8 +37,7 @@ const coursesData = [
     title: "Tally ERP 9 with GST",
     description:
       "Master accounting software Tally ERP 9, GST compliance, inventory management, and financial reporting.",
-    image:
-      "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&h=250&fit=crop",
+    image: courseImages.tally,
     duration: "3 months",
     students: 2156,
     rating: 4.8,

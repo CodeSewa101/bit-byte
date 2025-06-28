@@ -919,7 +919,7 @@ const HeroSlider = () => {
       {/* Navigation Controls - Mobile optimized */}
       <button
         onClick={prevSlide}
-        className="absolute left-2 sm:left-6 top-1/2 -translate-y-1/2 z-20 p-2 sm:p-3 bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-full transition-all duration-300 hover:scale-110 disabled:opacity-50 active:scale-95"
+        className="absolute left-2 sm:left-2 sm:top-[64%] top-1/2 -translate-y-1/2 z-20 p-2 sm:p-3 bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-full transition-all duration-300 hover:scale-110 disabled:opacity-50 active:scale-95"
         disabled={isTransitioning}
         aria-label="Previous slide"
       >
@@ -928,7 +928,7 @@ const HeroSlider = () => {
 
       <button
         onClick={nextSlide}
-        className="absolute right-2 sm:right-6 top-1/2 -translate-y-1/2 z-20 p-2 sm:p-3 bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-full transition-all duration-300 hover:scale-110 disabled:opacity-50 active:scale-95"
+        className="absolute right-2 sm:right-2 top-1/2 sm:top-[64%] -translate-y-1/2 z-20 p-2 sm:p-3 bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-full transition-all duration-300 hover:scale-110 disabled:opacity-50 active:scale-95"
         disabled={isTransitioning}
         aria-label="Next slide"
       >

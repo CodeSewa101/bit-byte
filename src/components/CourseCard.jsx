@@ -17,7 +17,7 @@ import {
   Globe,
   Monitor,
 } from "lucide-react";
-
+import { courseImages } from "../assets/images/courses";
 // Course data with your specific courses
 const coursesData = [
   {
@@ -25,8 +25,7 @@ const coursesData = [
     title: "O Level Computer Course",
     description:
       "Comprehensive computer literacy program recognized by NIELIT. Master essential computing skills and programming fundamentals.",
-    image:
-      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400&h=250&fit=crop",
+    image: courseImages.OLevel,
     duration: "12 months",
     students: 1250,
     rating: 4.8,
@@ -41,8 +40,7 @@ const coursesData = [
     title: "PGDCA (Post Graduate Diploma)",
     description:
       "Advanced diploma in computer applications covering programming, databases, and system analysis for graduates.",
-    image:
-      "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=250&fit=crop",
+    image: courseImages.pgdca,
     duration: "12 months",
     students: 890,
     rating: 4.7,
@@ -57,8 +55,7 @@ const coursesData = [
     title: "DCA (Diploma in Computer Applications)",
     description:
       "Foundation course in computer applications, perfect for beginners to start their IT journey.",
-    image:
-      "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=400&h=250&fit=crop",
+    image: courseImages.dca,
     duration: "6 months",
     students: 1850,
     rating: 4.6,
@@ -73,8 +70,7 @@ const coursesData = [
     title: "Oracle Database Administration",
     description:
       "Master Oracle database management, SQL, PL/SQL, and become a certified database administrator.",
-    image:
-      "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?w=400&h=250&fit=crop",
+    image: courseImages.oracle,
     duration: "8 weeks",
     students: 567,
     rating: 4.9,
@@ -89,8 +85,7 @@ const coursesData = [
     title: "Python Programming",
     description:
       "Learn Python from basics to advanced concepts including web development, data analysis, and automation.",
-    image:
-      "https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=400&h=250&fit=crop",
+    image: courseImages.python,
     duration: "10 weeks",
     students: 2340,
     rating: 4.8,
@@ -105,8 +100,7 @@ const coursesData = [
     title: "MS Office Suite Mastery",
     description:
       "Complete training in Word, Excel, PowerPoint, and Outlook for professional productivity.",
-    image:
-      "https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=400&h=250&fit=crop",
+    image: courseImages.msoffice,
     duration: "4 weeks",
     students: 3420,
     rating: 4.5,
@@ -121,8 +115,7 @@ const coursesData = [
     title: "Adobe Photoshop",
     description:
       "Master photo editing, digital art, and graphic design using Adobe Photoshop's powerful tools.",
-    image:
-      "https://images.unsplash.com/photo-1609921212029-bb5a28e60960?w=400&h=250&fit=crop",
+    image: courseImages.ps,
     duration: "6 weeks",
     students: 1890,
     rating: 4.7,
@@ -137,8 +130,7 @@ const coursesData = [
     title: "Java Programming",
     description:
       "Comprehensive Java course covering OOP concepts, frameworks, and enterprise application development.",
-    image:
-      "https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=400&h=250&fit=crop",
+    image: courseImages.java,
     duration: "12 weeks",
     students: 1567,
     rating: 4.8,
@@ -153,8 +145,7 @@ const coursesData = [
     title: "Computer Fundamentals & Office Tools",
     description:
       "Essential computer skills including hardware basics, software applications, and office productivity tools.",
-    image:
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=250&fit=crop",
+    image: courseImages.cs,
     duration: "8 weeks",
     students: 2750,
     rating: 4.4,
@@ -169,8 +160,7 @@ const coursesData = [
     title: "Tally ERP 9",
     description:
       "Complete accounting software training for business financial management and GST compliance.",
-    image:
-      "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&h=250&fit=crop",
+    image: courseImages.tally,
     duration: "6 weeks",
     students: 1234,
     rating: 4.6,
@@ -185,8 +175,7 @@ const coursesData = [
     title: "Accounting Fundamentals",
     description:
       "Learn basic to advanced accounting principles, bookkeeping, and financial statement preparation.",
-    image:
-      "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=400&h=250&fit=crop",
+    image: courseImages.ba,
     duration: "8 weeks",
     students: 987,
     rating: 4.5,
@@ -201,8 +190,7 @@ const coursesData = [
     title: "Graphic Design Complete",
     description:
       "Master visual communication through typography, layout design, branding, and digital illustration.",
-    image:
-      "https://images.unsplash.com/photo-1626785774573-4b799315345d?w=400&h=250&fit=crop",
+    image: courseImages.graphic,
     duration: "10 weeks",
     students: 1456,
     rating: 4.7,
@@ -217,8 +205,7 @@ const coursesData = [
     title: "AngularJS Development",
     description:
       "Build dynamic web applications using AngularJS framework with modern JavaScript practices.",
-    image:
-      "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=250&fit=crop",
+    image: courseImages.angular,
     duration: "8 weeks",
     students: 789,
     rating: 4.6,
@@ -233,8 +220,7 @@ const coursesData = [
     title: "C/C++ Programming",
     description:
       "Master foundational programming languages with data structures, algorithms, and system programming.",
-    image:
-      "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=400&h=250&fit=crop",
+    image: courseImages.ccplus,
     duration: "10 weeks",
     students: 1345,
     rating: 4.7,
@@ -249,8 +235,7 @@ const coursesData = [
     title: "Computer Fundamentals",
     description:
       "Basic computer literacy covering hardware, software, internet, and essential digital skills.",
-    image:
-      "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=400&h=250&fit=crop",
+    image: courseImages.cf,
     duration: "4 weeks",
     students: 3210,
     rating: 4.3,
@@ -297,8 +282,7 @@ const coursesData = [
     title: "DTP (Desktop Publishing)",
     description:
       "Professional page layout and design using industry-standard DTP software for print and digital media.",
-    image:
-      "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=250&fit=crop",
+    image: courseImages.dtp,
     duration: "6 weeks",
     students: 567,
     rating: 4.4,
@@ -345,8 +329,7 @@ const coursesData = [
     title: ".NET Development",
     description:
       "Microsoft .NET framework development including C#, ASP.NET, and enterprise application building.",
-    image:
-      "https://images.unsplash.com/photo-1629904853893-c2c8981a1dc5?w=400&h=250&fit=crop",
+    image: courseImages.net,
     duration: "12 weeks",
     students: 654,
     rating: 4.7,
@@ -361,8 +344,7 @@ const coursesData = [
     title: "PHP Web Development",
     description:
       "Server-side web development with PHP, MySQL, and popular frameworks for dynamic websites.",
-    image:
-      "https://images.unsplash.com/photo-1593720213428-28a5b9e94613?w=400&h=250&fit=crop",
+    image: courseImages.php,
     duration: "10 weeks",
     students: 1123,
     rating: 4.6,
@@ -406,7 +388,7 @@ const CourseCard = ({ course, index }) => {
     <div
       className={`group relative bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-700 transform ${
         isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
-      } hover:-translate-y-3 overflow-hidden border border-gray-100 hover:border-blue-200`}
+      } hover:-translate-y-3 overflow-hidden border border-gray-100 hover:border-blue-200 hover:cursor-pointer`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       style={{
@@ -424,13 +406,6 @@ const CourseCard = ({ course, index }) => {
 
         {/* Gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover:opacity-60 transition-opacity duration-500" />
-
-        {/* Icon overlay */}
-        <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500">
-          <div className="bg-white bg-opacity-20 backdrop-blur-sm rounded-full p-4 transform scale-75 group-hover:scale-100 transition-transform duration-300">
-            <IconComponent className="w-8 h-8 text-white" />
-          </div>
-        </div>
 
         {/* Badges */}
         <div className="absolute top-4 left-4 flex gap-2">

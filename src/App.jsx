@@ -12,7 +12,7 @@ import Testimonials from "./pages/Testimonials";
 import Gallery from "./components/Gallery";
 import ScrollToTop from "./components/ScrollToTop";
 import CodeSewaFooter from "./components/CodeSewaFooter";
-
+import WhatsAppButton from "./components/WhatsAppButton";
 function App() {
   return (
     <Router>
@@ -31,6 +31,7 @@ function App() {
         </main>
         <Footer />
         <CodeSewaFooter />
+        <WhatsAppButton />
       </div>
     </Router>
   );
