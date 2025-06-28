@@ -188,7 +188,7 @@ const HeroSlider = () => {
   const currentSlideData = slides[currentSlide];
 
   // Typewriter effects with mobile-optimized speeds
-  const typewriterSpeed = isMobile ? 30 : 40;
+  const typewriterSpeed = isMobile ? 80 : 40;
   const headingTypewriter = useTypewriter(
     currentSlideData.heading,
     resetTypewriter,
@@ -197,7 +197,7 @@ const HeroSlider = () => {
   const textTypewriter = useTypewriter(
     currentSlideData.text,
     resetTypewriter,
-    isMobile ? 15 : 20
+    isMobile ? 60 : 20
   );
 
   // Preload images and show content immediately
