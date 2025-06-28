@@ -366,7 +366,7 @@ const HeroSlider = () => {
 
               {/* Text with typewriter */}
               <p
-                className={`text-base sm:text-lg lg:text-xl text-white/90 mb-6 sm:mb-8 leading-relaxed max-w-xl transition-opacity duration-300`}
+                className={`text-base italic sm:text-lg lg:text-xl text-white/90 mb-6 sm:mb-8 leading-relaxed max-w-xl transition-opacity duration-300`}
                 style={{
                   opacity: isTransitioning ? 0.3 : 1,
                   filter: isTransitioning ? "blur(2px)" : "blur(0px)",

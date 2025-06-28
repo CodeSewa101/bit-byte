@@ -77,7 +77,7 @@ const Contact = () => {
 
   const stats = [
     { icon: Users, number: "500+", label: "Students" },
-    { icon: Award, number: "15+", label: "Courses" },
+    { icon: Award, number: "20+", label: "Courses" },
     { icon: Clock, number: "5+", label: "Years" },
   ];
 
@@ -283,7 +283,7 @@ const Contact = () => {
                   {/* Submit Button */}
                   <button
                     type="submit"
-                    className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-bold py-4 px-8 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-lg flex items-center justify-center gap-3 group"
+                    className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 hover:cursor-pointer text-white font-bold py-4 px-8 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-lg flex items-center justify-center gap-3 group"
                   >
                     <span>Send Message</span>
                     <Send

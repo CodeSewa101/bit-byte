@@ -72,7 +72,7 @@ const HomeContact = () => {
                 <ContactItem
                   icon={<FaMapMarkerAlt className="text-white" />}
                   title="Our Location"
-                  description="Near Bus Stand, Hinjilicut, Ganjam, Odisha - 761102"
+                  description="Infront of Biju Pattanaik Kalyan Mandap, Near Bus Stand, Hinjilicut, Ganjam, Odisha - 761102"
                   color="bg-gradient-to-r from-orange-500 to-orange-600"
                 />
                 <ContactItem

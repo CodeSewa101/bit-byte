@@ -11,6 +11,7 @@ import Contact from "./pages/Contact";
 import Testimonials from "./pages/Testimonials";
 import Gallery from "./components/Gallery";
 import ScrollToTop from "./components/ScrollToTop";
+import CodeSewaFooter from "./components/CodeSewaFooter";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           </Routes>
         </main>
         <Footer />
+        <CodeSewaFooter />
       </div>
     </Router>
   );

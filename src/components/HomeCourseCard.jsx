@@ -5,6 +5,21 @@ import { useNavigate } from "react-router-dom";
 const coursesData = [
   {
     id: 1,
+    title: "O Level Computer Course",
+    description:
+      "Comprehensive computer literacy program recognized by NIELIT. Master essential computing skills and programming fundamentals.",
+    image:
+      "https://images.unsplash.com/photo-1607799279861-4dd421887fb3?w=400&h=250&fit=crop",
+    duration: "12 months",
+    students: 1834,
+    rating: 4.9,
+    level: "Beginner",
+    category: "Certification",
+    color: "from-orange-500 to-red-400",
+    trending: true,
+  },
+  {
+    id: 2,
     title: "PGDCA - Post Graduate Diploma in Computer Applications",
     description:
       "Comprehensive 1-year diploma covering programming, database management, web development, and computer fundamentals.",
@@ -19,7 +34,7 @@ const coursesData = [
     trending: true,
   },
   {
-    id: 2,
+    id: 3,
     title: "Tally ERP 9 with GST",
     description:
       "Master accounting software Tally ERP 9, GST compliance, inventory management, and financial reporting.",
@@ -30,22 +45,8 @@ const coursesData = [
     rating: 4.8,
     level: "Beginner",
     category: "Accounting",
-    color: "from-green-500 to-emerald-400",
+    color: "from-blue-400 to-violet-400",
     hot: true,
-  },
-  {
-    id: 3,
-    title: "Core Java Programming",
-    description:
-      "Learn Java fundamentals, OOP concepts, data structures, and build real-world applications from scratch.",
-    image:
-      "https://images.unsplash.com/photo-1607799279861-4dd421887fb3?w=400&h=250&fit=crop",
-    duration: "4 months",
-    students: 1834,
-    rating: 4.9,
-    level: "Intermediate",
-    category: "Programming",
-    color: "from-orange-500 to-red-400",
   },
 ];
 
@@ -55,7 +56,7 @@ const ModernCourseCard = ({ course, index }) => {
 
   return (
     <div
-      className="group relative bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 overflow-hidden h-[420px] flex flex-col"
+      className="group relative bg-white rounded-2xl shadow-xl hover:cursor-pointer hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 overflow-hidden h-[420px] flex flex-col"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       style={{ animationDelay: `${index * 0.1}s` }}

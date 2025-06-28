@@ -19,7 +19,8 @@ const Footer = () => {
           {/* Center: Address */}
           <div className="flex-1 text-center">
             <p className="text-sm text-gray-600">
-              📍 Near Bus Stand, Hinjilicut, Ganjam, Odisha - 761102
+              📍 Infront of Biju Pattanaik Kalyan Mandap, Near Bus Stand,
+              Hinjilicut, Ganjam, Odisha - 761102
             </p>
           </div>
 

@@ -10,130 +10,383 @@ import {
   TrendingUp,
   Zap,
   Award,
-  Play,
+  Code,
+  Database,
+  Palette,
+  Calculator,
+  Globe,
+  Monitor,
 } from "lucide-react";
 
-// Course data with additional properties for enhanced design
+// Course data with your specific courses
 const coursesData = [
   {
     id: 1,
-    title: "Complete React Developer Course",
+    title: "O Level Computer Course",
     description:
-      "Master React from basics to advanced concepts including hooks, context, and modern patterns.",
+      "Comprehensive computer literacy program recognized by NIELIT. Master essential computing skills and programming fundamentals.",
     image:
-      "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=400&h=250&fit=crop",
-    duration: "12 weeks",
-    students: 2543,
+      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400&h=250&fit=crop",
+    duration: "12 months",
+    students: 1250,
     rating: 4.8,
     level: "Beginner",
-    category: "Frontend",
+    category: "Certification",
     trending: true,
     new: false,
+    icon: BookOpen,
   },
   {
     id: 2,
-    title: "Advanced JavaScript Concepts",
+    title: "PGDCA (Post Graduate Diploma)",
     description:
-      "Deep dive into JavaScript ES6+, async programming, and modern development practices.",
+      "Advanced diploma in computer applications covering programming, databases, and system analysis for graduates.",
     image:
-      "https://images.unsplash.com/photo-1627398242454-45a1465c2479?w=400&h=250&fit=crop",
-    duration: "8 weeks",
-    students: 1876,
-    rating: 4.9,
+      "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=250&fit=crop",
+    duration: "12 months",
+    students: 890,
+    rating: 4.7,
     level: "Advanced",
-    category: "Programming",
+    category: "Certification",
     trending: false,
-    new: true,
+    new: false,
+    icon: Award,
   },
   {
     id: 3,
-    title: "Node.js Backend Development",
+    title: "DCA (Diploma in Computer Applications)",
     description:
-      "Build scalable backend applications with Node.js, Express, and MongoDB.",
+      "Foundation course in computer applications, perfect for beginners to start their IT journey.",
     image:
-      "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&h=250&fit=crop",
-    duration: "10 weeks",
-    students: 1432,
-    rating: 4.7,
-    level: "Intermediate",
-    category: "Backend",
-    trending: false,
+      "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=400&h=250&fit=crop",
+    duration: "6 months",
+    students: 1850,
+    rating: 4.6,
+    level: "Beginner",
+    category: "Certification",
+    trending: true,
     new: false,
+    icon: Monitor,
   },
   {
     id: 4,
-    title: "UI/UX Design Fundamentals",
+    title: "Oracle Database Administration",
     description:
-      "Learn design principles, user research, and create stunning user interfaces.",
+      "Master Oracle database management, SQL, PL/SQL, and become a certified database administrator.",
     image:
-      "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?w=400&h=250&fit=crop",
-    duration: "6 weeks",
-    students: 2108,
-    rating: 4.6,
-    level: "Beginner",
-    category: "Design",
-    trending: true,
-    new: false,
+      "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?w=400&h=250&fit=crop",
+    duration: "8 weeks",
+    students: 567,
+    rating: 4.9,
+    level: "Advanced",
+    category: "Database",
+    trending: false,
+    new: true,
+    icon: Database,
   },
   {
     id: 5,
-    title: "Python for Data Science",
+    title: "Python Programming",
     description:
-      "Explore data analysis, visualization, and machine learning with Python libraries.",
+      "Learn Python from basics to advanced concepts including web development, data analysis, and automation.",
     image:
       "https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=400&h=250&fit=crop",
-    duration: "14 weeks",
-    students: 3201,
+    duration: "10 weeks",
+    students: 2340,
     rating: 4.8,
     level: "Intermediate",
-    category: "Data Science",
+    category: "Programming",
     trending: true,
     new: false,
+    icon: Code,
   },
   {
     id: 6,
-    title: "Mobile App Development with React Native",
+    title: "MS Office Suite Mastery",
     description:
-      "Create cross-platform mobile apps using React Native and modern development tools.",
+      "Complete training in Word, Excel, PowerPoint, and Outlook for professional productivity.",
     image:
-      "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400&h=250&fit=crop",
-    duration: "12 weeks",
-    students: 1654,
-    rating: 4.7,
-    level: "Intermediate",
-    category: "Mobile",
+      "https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=400&h=250&fit=crop",
+    duration: "4 weeks",
+    students: 3420,
+    rating: 4.5,
+    level: "Beginner",
+    category: "Office Tools",
     trending: false,
-    new: true,
+    new: false,
+    icon: BookOpen,
   },
   {
     id: 7,
-    title: "DevOps and Cloud Computing",
+    title: "Adobe Photoshop",
     description:
-      "Master containerization, CI/CD pipelines, and cloud deployment strategies.",
+      "Master photo editing, digital art, and graphic design using Adobe Photoshop's powerful tools.",
     image:
-      "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400&h=250&fit=crop",
-    duration: "16 weeks",
-    students: 987,
-    rating: 4.9,
-    level: "Advanced",
-    category: "DevOps",
-    trending: false,
+      "https://images.unsplash.com/photo-1609921212029-bb5a28e60960?w=400&h=250&fit=crop",
+    duration: "6 weeks",
+    students: 1890,
+    rating: 4.7,
+    level: "Intermediate",
+    category: "Design",
+    trending: true,
     new: false,
+    icon: Palette,
   },
   {
     id: 8,
-    title: "Cybersecurity Essentials",
+    title: "Java Programming",
     description:
-      "Learn security fundamentals, ethical hacking, and protect digital assets.",
+      "Comprehensive Java course covering OOP concepts, frameworks, and enterprise application development.",
     image:
-      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=400&h=250&fit=crop",
-    duration: "10 weeks",
-    students: 1234,
-    rating: 4.5,
-    level: "Beginner",
-    category: "Security",
+      "https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=400&h=250&fit=crop",
+    duration: "12 weeks",
+    students: 1567,
+    rating: 4.8,
+    level: "Intermediate",
+    category: "Programming",
     trending: false,
     new: false,
+    icon: Code,
+  },
+  {
+    id: 9,
+    title: "Computer Fundamentals & Office Tools",
+    description:
+      "Essential computer skills including hardware basics, software applications, and office productivity tools.",
+    image:
+      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=250&fit=crop",
+    duration: "8 weeks",
+    students: 2750,
+    rating: 4.4,
+    level: "Beginner",
+    category: "Fundamentals",
+    trending: false,
+    new: false,
+    icon: Monitor,
+  },
+  {
+    id: 10,
+    title: "Tally ERP 9",
+    description:
+      "Complete accounting software training for business financial management and GST compliance.",
+    image:
+      "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&h=250&fit=crop",
+    duration: "6 weeks",
+    students: 1234,
+    rating: 4.6,
+    level: "Intermediate",
+    category: "Accounting",
+    trending: true,
+    new: false,
+    icon: Calculator,
+  },
+  {
+    id: 11,
+    title: "Accounting Fundamentals",
+    description:
+      "Learn basic to advanced accounting principles, bookkeeping, and financial statement preparation.",
+    image:
+      "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=400&h=250&fit=crop",
+    duration: "8 weeks",
+    students: 987,
+    rating: 4.5,
+    level: "Beginner",
+    category: "Accounting",
+    trending: false,
+    new: false,
+    icon: Calculator,
+  },
+  {
+    id: 12,
+    title: "Graphic Design Complete",
+    description:
+      "Master visual communication through typography, layout design, branding, and digital illustration.",
+    image:
+      "https://images.unsplash.com/photo-1626785774573-4b799315345d?w=400&h=250&fit=crop",
+    duration: "10 weeks",
+    students: 1456,
+    rating: 4.7,
+    level: "Intermediate",
+    category: "Design",
+    trending: true,
+    new: false,
+    icon: Palette,
+  },
+  {
+    id: 13,
+    title: "AngularJS Development",
+    description:
+      "Build dynamic web applications using AngularJS framework with modern JavaScript practices.",
+    image:
+      "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=250&fit=crop",
+    duration: "8 weeks",
+    students: 789,
+    rating: 4.6,
+    level: "Advanced",
+    category: "Web Development",
+    trending: false,
+    new: true,
+    icon: Code,
+  },
+  {
+    id: 14,
+    title: "C/C++ Programming",
+    description:
+      "Master foundational programming languages with data structures, algorithms, and system programming.",
+    image:
+      "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=400&h=250&fit=crop",
+    duration: "10 weeks",
+    students: 1345,
+    rating: 4.7,
+    level: "Intermediate",
+    category: "Programming",
+    trending: false,
+    new: false,
+    icon: Code,
+  },
+  {
+    id: 15,
+    title: "Computer Fundamentals",
+    description:
+      "Basic computer literacy covering hardware, software, internet, and essential digital skills.",
+    image:
+      "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=400&h=250&fit=crop",
+    duration: "4 weeks",
+    students: 3210,
+    rating: 4.3,
+    level: "Beginner",
+    category: "Fundamentals",
+    trending: false,
+    new: false,
+    icon: Monitor,
+  },
+  {
+    id: 16,
+    title: "Data Entry Professional",
+    description:
+      "Professional data entry skills with accuracy, speed, and proficiency in various data management tools.",
+    image:
+      "https://images.unsplash.com/photo-1551434678-e076c223a692?w=400&h=250&fit=crop",
+    duration: "3 weeks",
+    students: 2890,
+    rating: 4.2,
+    level: "Beginner",
+    category: "Office Skills",
+    trending: false,
+    new: false,
+    icon: BookOpen,
+  },
+  {
+    id: 17,
+    title: "Digital Marketing",
+    description:
+      "Complete digital marketing course covering SEO, social media, PPC, and content marketing strategies.",
+    image:
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop",
+    duration: "12 weeks",
+    students: 1678,
+    rating: 4.8,
+    level: "Intermediate",
+    category: "Marketing",
+    trending: true,
+    new: false,
+    icon: Globe,
+  },
+  {
+    id: 18,
+    title: "DTP (Desktop Publishing)",
+    description:
+      "Professional page layout and design using industry-standard DTP software for print and digital media.",
+    image:
+      "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=250&fit=crop",
+    duration: "6 weeks",
+    students: 567,
+    rating: 4.4,
+    level: "Intermediate",
+    category: "Design",
+    trending: false,
+    new: false,
+    icon: Palette,
+  },
+  {
+    id: 19,
+    title: "Computer Hardware",
+    description:
+      "Hands-on training in computer assembly, troubleshooting, repair, and maintenance of PC systems.",
+    image:
+      "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=400&h=250&fit=crop",
+    duration: "8 weeks",
+    students: 678,
+    rating: 4.5,
+    level: "Intermediate",
+    category: "Hardware",
+    trending: false,
+    new: false,
+    icon: Monitor,
+  },
+  {
+    id: 20,
+    title: "Full Stack Java Development",
+    description:
+      "Complete web development using Java, Spring framework, databases, and modern frontend technologies.",
+    image:
+      "https://images.unsplash.com/photo-1619410283995-43d9134e7656?w=400&h=250&fit=crop",
+    duration: "16 weeks",
+    students: 892,
+    rating: 4.9,
+    level: "Advanced",
+    category: "Web Development",
+    trending: true,
+    new: true,
+    icon: Code,
+  },
+  {
+    id: 21,
+    title: ".NET Development",
+    description:
+      "Microsoft .NET framework development including C#, ASP.NET, and enterprise application building.",
+    image:
+      "https://images.unsplash.com/photo-1629904853893-c2c8981a1dc5?w=400&h=250&fit=crop",
+    duration: "12 weeks",
+    students: 654,
+    rating: 4.7,
+    level: "Advanced",
+    category: "Programming",
+    trending: false,
+    new: false,
+    icon: Code,
+  },
+  {
+    id: 22,
+    title: "PHP Web Development",
+    description:
+      "Server-side web development with PHP, MySQL, and popular frameworks for dynamic websites.",
+    image:
+      "https://images.unsplash.com/photo-1593720213428-28a5b9e94613?w=400&h=250&fit=crop",
+    duration: "10 weeks",
+    students: 1123,
+    rating: 4.6,
+    level: "Intermediate",
+    category: "Web Development",
+    trending: false,
+    new: false,
+    icon: Code,
+  },
+  {
+    id: 23,
+    title: "Web Design Complete",
+    description:
+      "Complete web design course covering HTML, CSS, JavaScript, responsive design, and UI/UX principles.",
+    image:
+      "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=400&h=250&fit=crop",
+    duration: "12 weeks",
+    students: 1987,
+    rating: 4.8,
+    level: "Intermediate",
+    category: "Web Development",
+    trending: true,
+    new: false,
+    icon: Globe,
   },
 ];
 
@@ -146,6 +399,8 @@ const CourseCard = ({ course, index }) => {
     const timer = setTimeout(() => setIsVisible(true), index * 150);
     return () => clearTimeout(timer);
   }, [index]);
+
+  const IconComponent = course.icon;
 
   return (
     <div
@@ -170,10 +425,10 @@ const CourseCard = ({ course, index }) => {
         {/* Gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover:opacity-60 transition-opacity duration-500" />
 
-        {/* Play button overlay */}
+        {/* Icon overlay */}
         <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500">
           <div className="bg-white bg-opacity-20 backdrop-blur-sm rounded-full p-4 transform scale-75 group-hover:scale-100 transition-transform duration-300">
-            <Play className="w-8 h-8 text-white fill-current" />
+            <IconComponent className="w-8 h-8 text-white" />
           </div>
         </div>
 
@@ -231,16 +486,6 @@ const CourseCard = ({ course, index }) => {
         <p className="text-gray-600 text-sm mb-6 leading-relaxed line-clamp-3">
           {course.description}
         </p>
-
-        <div className="flex items-center justify-between">
-          <div className="flex items-center text-sm text-gray-500">
-            <Users className="w-4 h-4 mr-1" />
-            <span className="font-medium">
-              {course.students.toLocaleString()}
-            </span>
-            <span className="ml-1">enrolled</span>
-          </div>
-        </div>
       </div>
     </div>
   );
@@ -266,21 +511,24 @@ const StatsCard = ({ icon: Icon, title, value, color }) => (
 );
 
 // Main Courses Component
-const Courses = () => {
+const InstituteCoursesPage = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [selectedLevel, setSelectedLevel] = useState("All");
 
   const categories = [
     "All",
-    "Frontend",
-    "Backend",
-    "Mobile",
-    "Design",
-    "Data Science",
-    "DevOps",
+    "Certification",
     "Programming",
-    "Security",
+    "Web Development",
+    "Design",
+    "Database",
+    "Office Tools",
+    "Accounting",
+    "Marketing",
+    "Hardware",
+    "Fundamentals",
+    "Office Skills",
   ];
   const levels = ["All", "Beginner", "Intermediate", "Advanced"];
 
@@ -297,10 +545,7 @@ const Courses = () => {
     return matchesSearch && matchesCategory && matchesLevel;
   });
 
-  const totalStudents = coursesData.reduce(
-    (sum, course) => sum + course.students,
-    0
-  );
+  const totalStudents = 500;
   const avgRating = (
     coursesData.reduce((sum, course) => sum + course.rating, 0) /
     coursesData.length
@@ -325,27 +570,39 @@ const Courses = () => {
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
           <div className="text-center">
-            <h1 className="text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-white via-blue-100 to-purple-200 mb-6 leading-tight animate-pulse">
-              Master Your Future
+            <h1 className="text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-white via-blue-100 to-purple-200 mb-6 leading-tight">
+              Transform Your Career
             </h1>
             <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto leading-relaxed">
-              Discover world-class courses designed by industry experts.
-              Transform your skills and accelerate your career with our
-              comprehensive learning platform.
+              Discover professional courses designed by industry experts. Build
+              your skills with our comprehensive computer education programs and
+              accelerate your career growth.
             </p>
+
+            {/* CTA Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+              <button className="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-8 py-4 rounded-2xl font-bold text-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 flex items-center justify-center gap-3">
+                <BookOpen className="w-6 h-6" />
+                Explore Courses
+              </button>
+              <button className="bg-white bg-opacity-20 backdrop-blur-sm  border-2 border-white border-opacity-30 px-8 py-4 rounded-2xl font-bold text-lg hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center gap-3">
+                <Users className="w-6 h-6" />
+                Join Community
+              </button>
+            </div>
 
             {/* Stats */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto mb-12">
               <StatsCard
                 icon={BookOpen}
-                title="Active Courses"
+                title="Course Offerings"
                 value={coursesData.length}
                 color="from-blue-500 to-cyan-500"
               />
               <StatsCard
                 icon={Users}
-                title="Students Enrolled"
-                value={`${(totalStudents / 1000).toFixed(1)}K+`}
+                title="Students Trained"
+                value={`${totalStudents}+`}
                 color="from-purple-500 to-pink-500"
               />
               <StatsCard
@@ -368,7 +625,7 @@ const Courses = () => {
               <Search className="w-6 h-6 absolute left-4 top-4 text-gray-400" />
               <input
                 type="text"
-                placeholder="Search for your next adventure..."
+                placeholder="Search for your perfect course..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
                 className="w-full pl-12 pr-4 py-4 bg-white bg-opacity-50 border-2 border-gray-200 rounded-2xl focus:ring-4 focus:ring-blue-500 focus:ring-opacity-20 focus:border-blue-500 transition-all duration-300 text-lg placeholder-gray-500"
@@ -409,7 +666,60 @@ const Courses = () => {
           </div>
         </div>
 
-        {/* Results Count */}
+        {/* Additional Features Section */}
+        <div className="bg-gradient-to-r from-blue-600 to-purple-700 rounded-3xl p-8 mb-12 text-white">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl font-bold mb-4">
+              Why Choose Our Institute?
+            </h2>
+            <p className="text-blue-100 text-lg max-w-2xl mx-auto">
+              We provide industry-relevant training with hands-on experience and
+              job placement assistance.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+            <div className="text-center">
+              <div className="bg-white bg-opacity-20 rounded-2xl p-4 mb-4 w-16 h-16 mx-auto flex items-center justify-center">
+                <Award className="w-8 h-8" />
+              </div>
+              <h3 className="font-bold text-lg mb-2">Certified Training</h3>
+              <p className="text-blue-100 text-sm">
+                Industry recognized certifications
+              </p>
+            </div>
+
+            <div className="text-center">
+              <div className="bg-white bg-opacity-20 rounded-2xl p-4 mb-4 w-16 h-16 mx-auto flex items-center justify-center">
+                <Users className="w-8 h-8" />
+              </div>
+              <h3 className="font-bold text-lg mb-2">Expert Instructors</h3>
+              <p className="text-blue-100 text-sm">
+                Learn from industry professionals
+              </p>
+            </div>
+
+            <div className="text-center">
+              <div className="bg-white bg-opacity-20 rounded-2xl p-4 mb-4 w-16 h-16 mx-auto flex items-center justify-center">
+                <Monitor className="w-8 h-8" />
+              </div>
+              <h3 className="font-bold text-lg mb-2">Modern Labs</h3>
+              <p className="text-blue-100 text-sm">
+                State-of-the-art computer labs
+              </p>
+            </div>
+
+            <div className="text-center">
+              <div className="bg-white bg-opacity-20 rounded-2xl p-4 mb-4 w-16 h-16 mx-auto flex items-center justify-center">
+                <TrendingUp className="w-8 h-8" />
+              </div>
+              <h3 className="font-bold text-lg mb-2">Job Assistance</h3>
+              <p className="text-blue-100 text-sm">
+                Placement support & career guidance
+              </p>
+            </div>
+          </div>
+        </div>
         <div className="mb-8">
           <p className="text-lg text-gray-600 font-medium">
             Showing{" "}
@@ -417,12 +727,12 @@ const Courses = () => {
               {filteredCourses.length}
             </span>{" "}
             of <span className="font-bold">{coursesData.length}</span>{" "}
-            incredible courses
+            professional courses
           </p>
         </div>
 
         {/* Courses Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8">
           {filteredCourses.map((course, index) => (
             <CourseCard key={course.id} course={course} index={index} />
           ))}
@@ -448,4 +758,4 @@ const Courses = () => {
   );
 };
 
-export default Courses;
+export default InstituteCoursesPage;
